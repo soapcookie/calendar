@@ -11,6 +11,7 @@ public class MyCalendar {
 				String formattedDate = today.format(formatter);
 				System.out.println("오늘 날짜: " + formattedDate);
 				
+				
 		Scanner scanner = new Scanner(System.in);
 		
 		//사용자에게 연도, 월 입력받기
@@ -19,10 +20,15 @@ public class MyCalendar {
 
 		System.out.print("월 : ");
 		int month = scanner.nextInt();
+		
 		scanner.close(); ;
+		
 		
 		CalendarFrame printer = new CalendarFrame();
 		printer.Calendar(year,month);
+		
+		CalendarInput printer2 = new CalendarInput();
+		
 		
 	
 			}
